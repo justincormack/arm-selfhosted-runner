@@ -36,8 +36,8 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: |
-            justincormack/multiarch-actions:latest
-            justincormack/multiarch-actions:${{ steps.prep.outputs.VERSION }}
+            justincormack/arm-selfhosted-runner:latest
+            justincormack/arm-selfhosted-runner:${{ steps.prep.outputs.VERSION }}
           labels: |
             org.opencontainers.image.title=${{ github.event.repository.name }}
             org.opencontainers.image.description=${{ github.event.repository.description }}
